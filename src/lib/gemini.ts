@@ -154,7 +154,7 @@ export const sendToGemini = async (
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      model: 'llama-3.3-70b-versatile',
+      model: 'llama-3.2-3b-preview',
       messages,
       temperature: mode === 'brainstorm' ? 0.9 : mode === 'learning' ? 0.5 : 0.7,
       max_tokens: mode === 'deep_dive' ? 4096 : 2048,
